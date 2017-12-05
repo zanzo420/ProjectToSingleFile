@@ -55,7 +55,8 @@ namespace ProjectToSingleFile
             {
                 if (fileName.EndsWith("AssemblyInfo.cs")
                     || fileName.Contains("TemporaryGeneratedFile")
-                    || fileName.Contains(".g.i.cs")) continue;
+                    || fileName.Contains(".g.i.cs")
+                    || fileName.EndsWith("Program.cs")) continue;
 
                 csFiles.Add(fileName);
             }
